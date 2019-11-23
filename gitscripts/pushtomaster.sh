@@ -1,7 +1,7 @@
 set -e
 #set -x
 
-chmod +x pushtomaster.sh
+chmod +x pushtomaster.sh 
 
 echo "Pushing changes to master..."
 

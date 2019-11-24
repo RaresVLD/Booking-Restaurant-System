@@ -7,25 +7,28 @@ namespace RestaurantServiceProvider.ServiceRepository
 {
     public class CommandServiceRepository:ICommandServiceRepository
     {
-        DbSet<Command> commands;
 
-        CommandServiceRepository(RestaurantServiceProviderContext context)
+        private RestaurantServiceProviderContext db;
+
+        public CommandServiceRepository(RestaurantServiceProviderContext db)
         {
-            commands = context.Commands;
+            this.db = db;
         }
+
         public IQueryable<Command> GetAllCommands()
         {
-            return commands;
+            return db.Commands;
+        }
+
+
+        public Command GetCommandById(int id)
+        {
+            return db.Commands.Find(id);
         }
 
         public List<Product> GetProductsForCommandId(int id)
         {
-            return commands.Find(id).Products.ToList();
-        }
-
-        public Command GetCommandById(int id)
-        {
-            return commands.Find(id);
+            return db.Commands.Find(id).Products.ToList();
         }
 
     }

@@ -9,8 +9,8 @@ namespace RestaurantServiceProvider.ServiceRepository
         public abstract IQueryable<Command> GetAllCommands();
 
 
-        public List<Product> GetProductsForCommandId(int id);
+        public abstract List<Product> GetProductsForCommandId(int id);
 
-        public Command GetCommandById(int id);
+        public abstract Command GetCommandById(int id);
     }
 }

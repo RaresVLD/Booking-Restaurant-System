@@ -13,6 +13,7 @@ namespace RestaurantServiceProvider.Entities
         [Key]
         public int Id { get; private set; }
         public ICollection<Product> Products { get; private set; }
+
         [ForeignKey("Reservation")]
         public int ReservationId { get; set; }
         public Reservation Reservation { get; private set; }

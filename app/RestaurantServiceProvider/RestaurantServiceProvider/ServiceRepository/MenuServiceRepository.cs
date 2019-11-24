@@ -5,7 +5,7 @@ using RestaurantServiceProvider.Entities;
 
 namespace RestaurantServiceProvider.ServiceRepository
 {
-    public class MenuServiceRepository
+    public class MenuServiceRepository:IMenuServiceRepository
     {
         private RestaurantServiceProviderContext db;
 
@@ -19,20 +19,18 @@ namespace RestaurantServiceProvider.ServiceRepository
             return db.Menus;
         }
 
-        public Menu GetMenuForSpecificRestaurantGivenId(int id)
-        {
-            return db.Menus.Where(m => m.Id == id).FirstOrDefault();
-        }
 
-        public Menu GetMenuForSpecificRestaurantGivenName(string name)
+        public Menu GetMenuById(int id)
         {
-
-            return db.Menus.Include(r => r.Restaurant).ToList().
-                   Where(m => m.Restaurant.Name == name).FirstOrDefault();
+            return db.Menus.Find(id);
         }
 
 
-
+        public List<Product> GetProductsByMenuId(int id)
+        {
+            var m = db.Menus.Include(p => p.Products).Where(p => p.Id == id).FirstOrDefault();
+            return m.Products.ToList();
+        }
 
     }
 }

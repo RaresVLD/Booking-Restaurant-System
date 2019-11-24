@@ -26,7 +26,6 @@
     <Folder Include="Entities\" />
     <Folder Include="DbContext\" />
     <Folder Include="Utils\" />
-    <Folder Include="ServiceRepository\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Utils.cs" />

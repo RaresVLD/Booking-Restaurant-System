@@ -14,7 +14,7 @@ namespace RestaurantServiceProvider.Controllers {
 
         public UsersController()
         {
-            users = Utils.SeedUsers();
+            //users = Utils.SeedUsers();
         }
 
 

@@ -1,20 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RestaurantServiceProvider.Entities
 {
     public class Menu
     {
-        public Menu()
+        private Menu()
         {
-            Products = new HashSet<Product>();
+            
         }
         [Key]
-        public int Id { get; }
+        public int Id { get; private set; }
+        public ICollection<Product> Products { get; private set; }
 
-        public ICollection<Product> Products { get; }
-        public Restaurant Restaurant { get; }
+        [ForeignKey("Restaurant")]
+        public int RestaurantId { get; set; }
+        public Restaurant Restaurant { get;  set; }
+
+        public static Menu Create(int id, int restaurantID)
+        {
+            return new Menu
+            {
+                Id = id,
+                Products = new HashSet<Product>(),
+                RestaurantId = restaurantID
+            };
+        }
 
     }
 }

@@ -8653,11 +8653,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/aem/facultate/An3sem1/NET/Proiect/Booking Restaurant System/RestaurantServiceProvider/RestaurantServiceProvider/RestaurantServiceProvider.csproj",
+      "projectUniqueName": "/Users/aem/Desktop/untitled folder/RestaurantServiceProvider/RestaurantServiceProvider.csproj",
       "projectName": "RestaurantServiceProvider",
-      "projectPath": "/Users/aem/facultate/An3sem1/NET/Proiect/Booking Restaurant System/RestaurantServiceProvider/RestaurantServiceProvider/RestaurantServiceProvider.csproj",
+      "projectPath": "/Users/aem/Desktop/untitled folder/RestaurantServiceProvider/RestaurantServiceProvider.csproj",
       "packagesPath": "/Users/aem/.nuget/packages/",
-      "outputPath": "/Users/aem/facultate/An3sem1/NET/Proiect/Booking Restaurant System/RestaurantServiceProvider/RestaurantServiceProvider/obj/",
+      "outputPath": "/Users/aem/Desktop/untitled folder/RestaurantServiceProvider/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/aem/.config/NuGet/NuGet.Config"

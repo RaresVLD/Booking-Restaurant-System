@@ -7,14 +7,21 @@ namespace RestaurantServiceProvider
 {
     public class User
     {
-        public User(int id, string firstName, string lastName, string email)
+        private User()
         {
-            Id = id;
-            FirstName = firstName;
-            LastName = lastName;
-            Email = email;
-            Reservations = new HashSet<Reservation>();
 
+        }
+        public static User Create(int id, string firstName, string lastName, string email, string password)
+        {
+            return new User
+            {
+                Id = id,
+                FirstName = firstName,
+                LastName = lastName,
+                Email = email,
+                Password = password,
+                Reservations = new HashSet<Reservation>()
+            };
         }
         [Key]
         [Required]
@@ -34,8 +41,8 @@ namespace RestaurantServiceProvider
 
         [Required]
         [MaxLength(50)]
-        public string Email { get; set; }
+        public string Email { get; private set; }
 
-        public ICollection<Reservation> Reservations { get; }
+        public ICollection<Reservation> Reservations { get; private set; }
     }
 }

@@ -1,21 +1,29 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace RestaurantServiceProvider.Entities
 {
     public class Restaurant
     {
-        public Restaurant()
+        private Restaurant()
         {
         
 
         }
         [Key]
-        public int Id { get;  }
-        public string Name { get; }
-        public string Address { get; }
+        public int Id { get; private set; }
+        public string Name { get; private set; }
+        public string Address { get; private set; }
+        public Menu Menu { get; private set; }
 
-        public Menu Menu { get;}
+        public static Restaurant Create(int id, string name, string address)
+        {
+            return new Restaurant
+            {
+                Id=id,
+                Name=name,
+                Address=address
+            };
+        }
 
     }
 }

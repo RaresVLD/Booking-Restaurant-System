@@ -26,14 +26,27 @@ namespace RestaurantServiceProvider.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("UserId")
+                    b.Property<int>("ReservationId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("ReservationId")
+                        .IsUnique();
 
                     b.ToTable("Commands");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 13,
+                            ReservationId = 11
+                        },
+                        new
+                        {
+                            Id = 14,
+                            ReservationId = 12
+                        });
                 });
 
             modelBuilder.Entity("RestaurantServiceProvider.Entities.Menu", b =>
@@ -43,9 +56,27 @@ namespace RestaurantServiceProvider.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("RestaurantId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
+                    b.HasIndex("RestaurantId")
+                        .IsUnique();
+
                     b.ToTable("Menus");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 3,
+                            RestaurantId = 1
+                        },
+                        new
+                        {
+                            Id = 4,
+                            RestaurantId = 2
+                        });
                 });
 
             modelBuilder.Entity("RestaurantServiceProvider.Entities.Product", b =>
@@ -58,8 +89,14 @@ namespace RestaurantServiceProvider.Migrations
                     b.Property<int?>("CommandId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("MenuId")
+                    b.Property<int>("MenuId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 
@@ -68,6 +105,36 @@ namespace RestaurantServiceProvider.Migrations
                     b.HasIndex("MenuId");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 5,
+                            MenuId = 3,
+                            Name = "Supa",
+                            Price = 15.0
+                        },
+                        new
+                        {
+                            Id = 6,
+                            MenuId = 3,
+                            Name = "Friptura",
+                            Price = 20.0
+                        },
+                        new
+                        {
+                            Id = 7,
+                            MenuId = 4,
+                            Name = "Bors",
+                            Price = 19.699999999999999
+                        },
+                        new
+                        {
+                            Id = 8,
+                            MenuId = 4,
+                            Name = "Carne",
+                            Price = 45.0
+                        });
                 });
 
             modelBuilder.Entity("RestaurantServiceProvider.Entities.Reservation", b =>
@@ -77,17 +144,43 @@ namespace RestaurantServiceProvider.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("NumberOfPersons")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("ReservationDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("UserId")
+                    b.Property<int>("RestaurantId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("RestaurantId");
+
                     b.HasIndex("UserId");
 
                     b.ToTable("Reservations");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 11,
+                            NumberOfPersons = 5,
+                            ReservationDate = new DateTime(2019, 12, 10, 18, 23, 21, 0, DateTimeKind.Unspecified),
+                            RestaurantId = 1,
+                            UserId = 9
+                        },
+                        new
+                        {
+                            Id = 12,
+                            NumberOfPersons = 3,
+                            ReservationDate = new DateTime(2019, 12, 10, 18, 23, 21, 0, DateTimeKind.Unspecified),
+                            RestaurantId = 2,
+                            UserId = 10
+                        });
                 });
 
             modelBuilder.Entity("RestaurantServiceProvider.Entities.Restaurant", b =>
@@ -97,9 +190,29 @@ namespace RestaurantServiceProvider.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Restaurants");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Address = "Bulevardul Stefan cel Mare si Sfant 4",
+                            Name = "Mamma Mia"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Address = "Strada Han Tătar Bloc 361",
+                            Name = "Serginio"
+                        });
                 });
 
             modelBuilder.Entity("RestaurantServiceProvider.User", b =>
@@ -132,13 +245,42 @@ namespace RestaurantServiceProvider.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 9,
+                            Email = "roxana.apopei@gmail.com",
+                            FirstName = "Roxana",
+                            LastName = "Apopei",
+                            Password = "12345"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Email = "tudor.manoleasa@gmail.com",
+                            FirstName = "Tudor",
+                            LastName = "Manoleasa",
+                            Password = "56780"
+                        });
                 });
 
             modelBuilder.Entity("RestaurantServiceProvider.Entities.Command", b =>
                 {
-                    b.HasOne("RestaurantServiceProvider.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
+                    b.HasOne("RestaurantServiceProvider.Entities.Reservation", "Reservation")
+                        .WithOne("Command")
+                        .HasForeignKey("RestaurantServiceProvider.Entities.Command", "ReservationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("RestaurantServiceProvider.Entities.Menu", b =>
+                {
+                    b.HasOne("RestaurantServiceProvider.Entities.Restaurant", "Restaurant")
+                        .WithOne("Menu")
+                        .HasForeignKey("RestaurantServiceProvider.Entities.Menu", "RestaurantId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("RestaurantServiceProvider.Entities.Product", b =>
@@ -147,16 +289,26 @@ namespace RestaurantServiceProvider.Migrations
                         .WithMany("Products")
                         .HasForeignKey("CommandId");
 
-                    b.HasOne("RestaurantServiceProvider.Entities.Menu", null)
+                    b.HasOne("RestaurantServiceProvider.Entities.Menu", "Menu")
                         .WithMany("Products")
-                        .HasForeignKey("MenuId");
+                        .HasForeignKey("MenuId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("RestaurantServiceProvider.Entities.Reservation", b =>
                 {
-                    b.HasOne("RestaurantServiceProvider.User", null)
+                    b.HasOne("RestaurantServiceProvider.Entities.Restaurant", "Restaurant")
+                        .WithMany()
+                        .HasForeignKey("RestaurantId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("RestaurantServiceProvider.User", "User")
                         .WithMany("Reservations")
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

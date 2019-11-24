@@ -1,6 +1,6 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using RestaurantServiceProvider.Entities;
+using RestaurantServiceProvider.Utils;
 
 namespace RestaurantServiceProvider
 {
@@ -8,7 +8,6 @@ namespace RestaurantServiceProvider
     {
         public RestaurantServiceProviderContext()
         {
-            Database.EnsureCreated();
         }
 
         public DbSet<Command> Commands { get; set; }
@@ -24,7 +23,7 @@ namespace RestaurantServiceProvider
             if (!optionsBuilder.IsConfigured)
             {
 
-                optionsBuilder.UseSqlServer("Server=localhost,1432; Database=RestaurantServiceProvider; User=SA; Password=reallyStrongPwd123");
+                optionsBuilder.UseSqlServer("Server=localhost,1432; Database=RestaurantService; User=SA; Password=reallyStrongPwd123");
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -36,7 +35,20 @@ namespace RestaurantServiceProvider
             modelBuilder.Entity<Restaurant>().HasKey(c => c.Id);
             modelBuilder.Entity<User>().HasKey(c => c.Id);
 
+            modelBuilder.Entity<Restaurant>().HasData(
+                RestaurantSeed.CreateRestaurants());
 
+            modelBuilder.Entity<Menu>().HasData(
+               MenuSeed.CreateMenus());
+
+            modelBuilder.Entity<Product>().HasData(
+                ProductSeed.CreateProducts());
+            modelBuilder.Entity<User>().HasData(
+                UserSeed.CreateUsers());
+            modelBuilder.Entity<Reservation>().HasData(
+                ReservationSeed.CreateReservations());
+            modelBuilder.Entity<Command>().HasData(
+                CommandSeed.CreateCommands());
         }
     }
 } 

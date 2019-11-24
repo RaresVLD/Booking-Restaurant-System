@@ -28,4 +28,28 @@
     <Folder Include="Utils\" />
     <Folder Include="ServiceRepository\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Utils.cs" />
+    <Compile Remove="Migrations\20191123132635_initial.cs" />
+    <Compile Remove="Migrations\RestaurantServiceProviderContextModelSnapshot.cs" />
+    <Compile Remove="Migrations\20191123205957_initconfig.cs" />
+    <Compile Remove="Migrations\20191123205957_initconfig.Designer.cs" />
+    <Compile Remove="Migrations\20191123132635_initial.Designer.cs" />
+    <Compile Remove="Migrations\20191123214810_initial2.cs" />
+    <Compile Remove="Migrations\20191123214810_initial2.Designer.cs" />
+    <Compile Remove="Migrations\20191123214131_initial.cs" />
+    <Compile Remove="Migrations\20191123214131_initial.Designer.cs" />
+    <Compile Remove="Migrations\20191123220753_initial2.cs" />
+    <Compile Remove="Migrations\20191124095208_initial2.cs" />
+    <Compile Remove="Migrations\20191124095208_initial2.Designer.cs" />
+    <Compile Remove="Migrations\20191124094406_initial.cs" />
+    <Compile Remove="Migrations\20191124094406_initial.Designer.cs" />
+    <Compile Remove="Migrations\RestaurantServiceProviderContextModelSnapshot.cs" />
+    <Compile Remove="Migrations\20191124101046_initial.Designer.cs" />
+    <Compile Remove="Migrations\20191124101046_initial.cs" />
+    <Compile Remove="Migrations\RestaurantServiceProviderContextModelSnapshot.cs" />
+    <Compile Remove="Migrations\20191124125536_initial.Designer.cs" />
+    <Compile Remove="Migrations\20191124125536_initial.cs" />
+    <Compile Remove="Migrations\RestaurantServiceProviderContextModelSnapshot.cs" />
+  </ItemGroup>
 </Project>

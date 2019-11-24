@@ -22,11 +22,17 @@ namespace RestaurantServiceProvider
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            var connectionString = @"Server=(localdb)\mssqllocaldb;Database=RestaurantDB;Trusted_Connection=True;";
+            var connectionString = "Server=localhost,1432; Database=RestaurantService; User=SA; Password=reallyStrongPwd123";
             services.AddDbContext<RestaurantServiceProviderContext>(
                 options =>
                     options.UseSqlServer(connectionString));
             services.AddTransient<IUserSerivceRepository, UserServiceRepository>();
+
+            services.AddTransient<IMenuServiceRepository, MenuServiceRepository>();
+
+            services.AddTransient<ICommandServiceRepository, CommandServiceRepository>();
+
+
             services.AddControllers();
                 
            

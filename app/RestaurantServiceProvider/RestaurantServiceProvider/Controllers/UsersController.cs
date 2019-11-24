@@ -14,7 +14,6 @@ namespace RestaurantServiceProvider.Controllers {
 
         public UsersController(IUserSerivceRepository user)
         {
-
             _user = user;
         }
 
@@ -24,12 +23,23 @@ namespace RestaurantServiceProvider.Controllers {
             List<User> users = _user.GetUsers();
             return Ok(users);
         }
+
         [HttpGet("get/{id}")]
         public ActionResult<User> GetUserById(int id)
         {
             List<User> users = _user.GetUserById(id);
             return Ok(users);
         }
+
+        [HttpGet("get/{firstname}")]
+        public ActionResult<User> GetUserByFirstName(string firstname)
+        {
+            List<User> users = _user.GetUserByFirstName(firstname);
+            return Ok(users);
+        }
+        
+
+
 
     }
 }

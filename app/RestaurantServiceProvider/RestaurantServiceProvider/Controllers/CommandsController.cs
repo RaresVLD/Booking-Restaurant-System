@@ -1,16 +1,16 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using RestaurantServiceProvider.Entities;
 using RestaurantServiceProvider.ServiceRepository;
+using System.Collections.Generic;
+using System.Linq;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace RestaurantServiceProvider.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
-    public class CommandsController : Controller
+    [Route("[controller]")]
+    public class CommandsController : ControllerBase
     {
 
         public ICommandServiceRepository _command;

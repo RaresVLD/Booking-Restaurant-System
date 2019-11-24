@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\RestaurantServiceProvider",
+    "\\RestaurantServiceProvider\\Controllers"
   ],
   "SelectedNode": "\\RestaurantServiceProvider.sln",
   "PreviewInSolutionExplorer": false

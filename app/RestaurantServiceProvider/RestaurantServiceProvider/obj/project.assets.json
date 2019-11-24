@@ -8653,11 +8653,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Facultate\\Anul III\\.NET\\Booking-Restaurant-System\\app\\RestaurantServiceProvider\\RestaurantServiceProvider\\RestaurantServiceProvider.csproj",
+      "projectUniqueName": "D:\\Facultate\\Anul III\\.NET\\Git\\Booking-Restaurant-System\\app\\RestaurantServiceProvider\\RestaurantServiceProvider\\RestaurantServiceProvider.csproj",
       "projectName": "RestaurantServiceProvider",
-      "projectPath": "D:\\Facultate\\Anul III\\.NET\\Booking-Restaurant-System\\app\\RestaurantServiceProvider\\RestaurantServiceProvider\\RestaurantServiceProvider.csproj",
+      "projectPath": "D:\\Facultate\\Anul III\\.NET\\Git\\Booking-Restaurant-System\\app\\RestaurantServiceProvider\\RestaurantServiceProvider\\RestaurantServiceProvider.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\Facultate\\Anul III\\.NET\\Booking-Restaurant-System\\app\\RestaurantServiceProvider\\RestaurantServiceProvider\\obj\\",
+      "outputPath": "D:\\Facultate\\Anul III\\.NET\\Git\\Booking-Restaurant-System\\app\\RestaurantServiceProvider\\RestaurantServiceProvider\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD:app/RestaurantServiceProvider/RestaurantServiceProvider/obj/RestaurantServiceProvider.csproj.nuget.dgspec.json
-    "/Users/aem/Desktop/untitled folder/RestaurantServiceProvider/RestaurantServiceProvider.csproj": {}
-  },
-  "projects": {
-    "/Users/aem/Desktop/untitled folder/RestaurantServiceProvider/RestaurantServiceProvider.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/aem/Desktop/untitled folder/RestaurantServiceProvider/RestaurantServiceProvider.csproj",
-        "projectName": "RestaurantServiceProvider",
-        "projectPath": "/Users/aem/Desktop/untitled folder/RestaurantServiceProvider/RestaurantServiceProvider.csproj",
-        "packagesPath": "/Users/aem/.nuget/packages/",
-        "outputPath": "/Users/aem/Desktop/untitled folder/RestaurantServiceProvider/obj/",
-=======
     "D:\\Facultate\\Anul III\\.NET\\Booking-Restaurant-System\\app\\RestaurantServiceProvider\\RestaurantServiceProvider\\RestaurantServiceProvider.csproj": {}
   },
   "projects": {
@@ -25,7 +12,6 @@
         "projectPath": "D:\\Facultate\\Anul III\\.NET\\Booking-Restaurant-System\\app\\RestaurantServiceProvider\\RestaurantServiceProvider\\RestaurantServiceProvider.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
         "outputPath": "D:\\Facultate\\Anul III\\.NET\\Booking-Restaurant-System\\app\\RestaurantServiceProvider\\RestaurantServiceProvider\\obj\\",
->>>>>>> master:app/RestaurantServiceProvider/obj/RestaurantServiceProvider.csproj.nuget.dgspec.json
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

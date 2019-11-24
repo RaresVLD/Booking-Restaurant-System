@@ -8653,19 +8653,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD:app/RestaurantServiceProvider/RestaurantServiceProvider/obj/project.assets.json
-      "projectUniqueName": "/Users/aem/Desktop/untitled folder/RestaurantServiceProvider/RestaurantServiceProvider.csproj",
-      "projectName": "RestaurantServiceProvider",
-      "projectPath": "/Users/aem/Desktop/untitled folder/RestaurantServiceProvider/RestaurantServiceProvider.csproj",
-      "packagesPath": "/Users/aem/.nuget/packages/",
-      "outputPath": "/Users/aem/Desktop/untitled folder/RestaurantServiceProvider/obj/",
-=======
       "projectUniqueName": "D:\\Facultate\\Anul III\\.NET\\Booking-Restaurant-System\\app\\RestaurantServiceProvider\\RestaurantServiceProvider\\RestaurantServiceProvider.csproj",
       "projectName": "RestaurantServiceProvider",
       "projectPath": "D:\\Facultate\\Anul III\\.NET\\Booking-Restaurant-System\\app\\RestaurantServiceProvider\\RestaurantServiceProvider\\RestaurantServiceProvider.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
       "outputPath": "D:\\Facultate\\Anul III\\.NET\\Booking-Restaurant-System\\app\\RestaurantServiceProvider\\RestaurantServiceProvider\\obj\\",
->>>>>>> master:app/RestaurantServiceProvider/obj/project.assets.json
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

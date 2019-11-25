@@ -15,9 +15,9 @@ namespace RestaurantServiceProvider.ServiceRepository
             this.db = db;
         }
 
-        public IQueryable<Command> GetAllCommands()
+        public List<Command> GetAllCommands()
         {
-            return db.Commands;
+            return db.Commands.ToList();
         }
 
 

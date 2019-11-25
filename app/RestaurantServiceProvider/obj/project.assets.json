@@ -8676,26 +8676,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "/Users/aem/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Facultate\\Anul III\\.NET\\RestaurantServiceProviderLocal\\RestaurantServiceProvider\\RestaurantServiceProvider.csproj",
+      "projectUniqueName": "/Users/aem/Git/Booking-Restaurant-System/app/RestaurantServiceProvider/RestaurantServiceProvider.csproj",
       "projectName": "RestaurantServiceProvider",
-      "projectPath": "D:\\Facultate\\Anul III\\.NET\\RestaurantServiceProviderLocal\\RestaurantServiceProvider\\RestaurantServiceProvider.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\Facultate\\Anul III\\.NET\\RestaurantServiceProviderLocal\\RestaurantServiceProvider\\obj\\",
+      "projectPath": "/Users/aem/Git/Booking-Restaurant-System/app/RestaurantServiceProvider/RestaurantServiceProvider.csproj",
+      "packagesPath": "/Users/aem/.nuget/packages/",
+      "outputPath": "/Users/aem/Git/Booking-Restaurant-System/app/RestaurantServiceProvider/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/aem/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8775,7 +8773,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
       }
     }
   },

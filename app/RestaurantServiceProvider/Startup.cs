@@ -22,7 +22,9 @@ namespace RestaurantServiceProvider
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            //var connectionString = "Server=localhost,1432; Database=RestaurantService; User=SA; Password=reallyStrongPwd123";
             var connectionString = @"Server=(localdb)\mssqllocaldb;Database=RestaurantDB;Trusted_Connection=True;";
+
             services.AddDbContext<RestaurantServiceProviderContext>(
                 options =>
                     options.UseSqlServer(connectionString));

@@ -23,7 +23,7 @@ namespace RestaurantServiceProvider.Controllers
         [HttpGet]
         public ActionResult<Command> Get()
         {
-            List<Command> commands = _command.GetAllCommands().ToList();
+            List<Command> commands = _command.GetAllCommands();
             return Ok(commands);
         }
         [HttpGet("get/{id}")]

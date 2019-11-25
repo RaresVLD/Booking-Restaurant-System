@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{479C6509-8B9E-449B-88AB-EB58C767EE35}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ProductsController.cs">
+    <Files>
+      <File FileName="Controllers/CommandsController.cs" Line="26" Column="63" />
+      <File FileName="Entities/Command.cs" Line="1" Column="1" />
+      <File FileName="ServiceRepository/CommandServiceRepository.cs" Line="20" Column="40" />
+      <File FileName="ServiceRepository/ICommandServiceRepository.cs" Line="17" Column="1" />
+      <File FileName="ServiceRepository/ProductServiceRepository.cs" Line="22" Column="1" />
+      <File FileName="DbContext/RestaurantServiceProviderContext.cs" Line="28" Column="134" />
+      <File FileName="Startup.cs" Line="28" Column="48" />
+      <File FileName="Controllers/ProductsController.cs" Line="10" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RestaurantServiceProvider" expanded="True">
+            <Node name="RestaurantServiceProvider" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="ProductsController.cs" selected="True" />
+              </Node>
+              <Node name="DbContext" expanded="True" />
+              <Node name="ServiceRepository" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.RestaurantServiceProvider PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

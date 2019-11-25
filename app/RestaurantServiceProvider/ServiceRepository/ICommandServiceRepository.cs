@@ -6,7 +6,7 @@ namespace RestaurantServiceProvider.ServiceRepository
 {
     public interface ICommandServiceRepository
     {
-        public abstract IQueryable<Command> GetAllCommands();
+        public abstract List<Command> GetAllCommands();
 
 
         public abstract List<Product> GetProductsForCommandId(int id);

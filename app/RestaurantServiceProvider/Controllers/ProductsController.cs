@@ -7,7 +7,7 @@ using RestaurantServiceProvider.ServiceRepository;
 
 namespace RestaurantServiceProvider.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class ProductsController : ControllerBase
     {
         public IProductServiceRepository _product;

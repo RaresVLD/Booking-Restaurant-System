@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.1" />
+    <PackageReference Include="EntityFramework" Version="6.3.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="DbContext\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Utils.cs" />
+    <Compile Remove="Migrations\20191123132635_initial.cs" />
+    <Compile Remove="Migrations\RestaurantServiceProviderContextModelSnapshot.cs" />
+    <Compile Remove="Migrations\20191123205957_initconfig.cs" />
+    <Compile Remove="Migrations\20191123205957_initconfig.Designer.cs" />
+    <Compile Remove="Migrations\20191123132635_initial.Designer.cs" />
+    <Compile Remove="Migrations\20191123214810_initial2.cs" />
+    <Compile Remove="Migrations\20191123214810_initial2.Designer.cs" />
+    <Compile Remove="Migrations\20191123214131_initial.cs" />
+    <Compile Remove="Migrations\20191123214131_initial.Designer.cs" />
+    <Compile Remove="Migrations\20191123220753_initial2.cs" />
+    <Compile Remove="Migrations\20191124095208_initial2.cs" />
+    <Compile Remove="Migrations\20191124095208_initial2.Designer.cs" />
+    <Compile Remove="Migrations\20191124094406_initial.cs" />
+    <Compile Remove="Migrations\20191124094406_initial.Designer.cs" />
+    <Compile Remove="Migrations\RestaurantServiceProviderContextModelSnapshot.cs" />
+    <Compile Remove="Migrations\20191124101046_initial.Designer.cs" />
+    <Compile Remove="Migrations\20191124101046_initial.cs" />
+    <Compile Remove="Migrations\RestaurantServiceProviderContextModelSnapshot.cs" />
+    <Compile Remove="Migrations\20191124125536_initial.Designer.cs" />
+    <Compile Remove="Migrations\20191124125536_initial.cs" />
+    <Compile Remove="Migrations\RestaurantServiceProviderContextModelSnapshot.cs" />
+  </ItemGroup>
+</Project>

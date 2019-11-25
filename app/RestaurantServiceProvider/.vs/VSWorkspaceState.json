@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\RestaurantServiceProvider",
-    "\\RestaurantServiceProvider\\Controllers"
+    "\\Controllers",
+    "\\DbContext"
   ],
-  "SelectedNode": "\\RestaurantServiceProvider.sln",
+  "SelectedNode": "\\Utils",
   "PreviewInSolutionExplorer": false
 }

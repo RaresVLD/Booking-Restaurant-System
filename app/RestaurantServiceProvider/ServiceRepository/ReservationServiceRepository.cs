@@ -6,21 +6,22 @@ using System.Linq;
 
 namespace RestaurantServiceProvider.ServiceRepository
 {
-    public class ReservationRepository
+    public class ReservationServiceRepository : IReservationServiceRepository
     {
         private DbSet<Reservation> reservations;
 
-        public ReservationRepository(RestaurantServiceProviderContext context)
+        public ReservationServiceRepository(RestaurantServiceProviderContext context)
         {
             reservations = context.Reservations;
         }
 
         public List<Reservation> GetReservationsById(int id) => reservations.Where(reservation => reservation.Id == id).ToList();
 
-        public List<Reservation> GetReservationsByUser(User user) => reservations.Where(reservation => reservation.User.Id == user.Id).ToList();
+        public List<Reservation> GetReservationsByUserId(int id) => reservations.Where(reservation => reservation.User.Id == id).ToList();
 
         public List<Reservation> GetReservationsByDate(DateTime date) => reservations.Where(reservation => reservation.ReservationDate == date).ToList();
 
-        public List<Reservation> GetReservationsByRestaurant(Restaurant restaurant) => reservations.Where(reservation => reservation.Restaurant.Id == restaurant.Id).ToList();
+        public List<Reservation> GetReservationsByRestaurantId(int id) => reservations.Where(reservation => reservation.Restaurant.Id == id).ToList();
+        public List<Reservation> GetReservations() => reservations.ToList();
     }
 }

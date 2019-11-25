@@ -30,6 +30,8 @@ namespace RestaurantServiceProvider
             services.AddTransient<IRestaurantServiceRepository, RestaurantServiceRepository>();
             services.AddTransient<ICommandServiceRepository, CommandServiceRepository>();
             services.AddTransient<IMenuServiceRepository, MenuServiceRepository>();
+            services.AddTransient<IProductServiceRepository, ProductServiceRepository>();
+            services.AddTransient<IReservationServiceRepository, ReservationServiceRepository>();
             services.AddControllers();
            
         }

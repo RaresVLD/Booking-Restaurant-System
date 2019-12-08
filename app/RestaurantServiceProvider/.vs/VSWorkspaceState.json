@@ -4,6 +4,6 @@
     "\\Controllers",
     "\\DbContext"
   ],
-  "SelectedNode": "\\Utils",
+  "SelectedNode": "\\Controllers\\MenusController.cs",
   "PreviewInSolutionExplorer": false
 }

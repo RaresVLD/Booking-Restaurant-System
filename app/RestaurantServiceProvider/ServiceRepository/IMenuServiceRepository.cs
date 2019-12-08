@@ -12,5 +12,7 @@ namespace RestaurantServiceProvider.ServiceRepository
 
         public abstract List<Product> GetProductsByMenuId(int id);
 
+        public abstract void UpdateMenuById(int id, Menu menu);
+
     }
 }

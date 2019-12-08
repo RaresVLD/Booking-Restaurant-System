@@ -31,5 +31,13 @@ namespace RestaurantServiceProvider.ServiceRepository
             return m.Products.ToList();
         }
 
+        public void UpdateMenuById(int id, Menu newMenu)
+        {
+            var menu = db.Menus.Where(menu => menu.Id == id).FirstOrDefault();
+            menu = newMenu;
+            db.SaveChanges();
+
+        }
+
     }
 }

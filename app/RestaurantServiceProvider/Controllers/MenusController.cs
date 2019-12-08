@@ -40,5 +40,13 @@ namespace RestaurantServiceProvider.Controllers
             return Ok(products);
         }
 
+        [HttpPut("put/{id}")]
+        public IActionResult PutMenuItem(int id, [FromBody]Menu newMenu)
+        {
+            _menu.UpdateMenuById(id, newMenu);
+            return NoContent();
+        }
+
+
     }
 }

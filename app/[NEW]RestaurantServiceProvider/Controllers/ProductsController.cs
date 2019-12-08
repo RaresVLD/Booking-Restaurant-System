@@ -13,19 +13,19 @@ namespace RestaurantServiceProvider.Controllers
     public class ProductsController : Controller
     {
 
-        public IProductServiceRepository _products;
+        public IProductServiceRepository _productRepository;
 
 
-        public ProductsController(IProductServiceRepository product)
+        public ProductsController(IProductServiceRepository productRepository)
         {
-            _products = product;
+            _productRepository = productRepository;
         }
 
 
         [HttpGet]
         public ActionResult Get()
         {
-            List<Product> products = _products.GetAllProducts();
+            List<Product> products = _productRepository.GetAllProducts();
             return Ok(products);
         }
 
@@ -33,7 +33,7 @@ namespace RestaurantServiceProvider.Controllers
         [HttpGet("booking/datetime/{datetime}")]
         public ActionResult GetAllProductsGivenBookingDateTime(DateTime dateTime)
         {
-            List<Product> products = _products.GetAllProductsGivenBookingDateTime(dateTime);
+            List<Product> products = _productRepository.GetAllProductsGivenBookingDateTime(dateTime);
             return Ok(products);
         }
 
@@ -41,7 +41,7 @@ namespace RestaurantServiceProvider.Controllers
         [HttpGet("price/{price}")]
         public ActionResult GetAllProductsGivenPriceBelow(int price)
         {
-            List<Product> products = _products.GetAllProductsGivenPriceBelow(price);
+            List<Product> products = _productRepository.GetAllProductsGivenPriceBelow(price);
             return Ok(products);
         }
 

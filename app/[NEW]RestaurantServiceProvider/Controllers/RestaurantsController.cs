@@ -12,19 +12,19 @@ namespace RestaurantServiceProvider.Controllers
     [Route("v1/[controller]")]
     public class RestaurantsController : Controller
     {
-        public IRestaurantServiceRepository _restaurants;
+        public IRestaurantServiceRepository _restaurantRepository;
 
 
-        public RestaurantsController(IRestaurantServiceRepository restaurant)
+        public RestaurantsController(IRestaurantServiceRepository restaurantRepository)
         {
-            _restaurants = restaurant;
+            _restaurantRepository = restaurantRepository;
         }
 
 
         [HttpGet]
         public ActionResult Get()
         {
-            List<Restaurant> restaurants = _restaurants.GetAllRestaurants();
+            List<Restaurant> restaurants = _restaurantRepository.GetAllRestaurants();
             return Ok(restaurants);
         }
 
@@ -32,7 +32,7 @@ namespace RestaurantServiceProvider.Controllers
         [HttpGet("name/{name}")]
         public ActionResult GetRestaurantGivenName(string name)
         {
-            Restaurant restaurant = _restaurants.GetRestaurantGivenName(name);
+            Restaurant restaurant = _restaurantRepository.GetRestaurantGivenName(name);
             return Ok(restaurant);
         }
 
@@ -40,7 +40,7 @@ namespace RestaurantServiceProvider.Controllers
         [HttpGet("address/{address}")]
         public ActionResult GetRestaurantGivenAddress(string address)
         {
-            Restaurant restaurant = _restaurants.GetRestaurantGivenAddress(address);
+            Restaurant restaurant = _restaurantRepository.GetRestaurantGivenAddress(address);
             return Ok(restaurant);
         }
 
@@ -48,7 +48,7 @@ namespace RestaurantServiceProvider.Controllers
         [HttpGet("name/{name}/products")]
         public ActionResult GetAllProductsGivenRestaurantName(string name)
         {
-            List<Product> products = _restaurants.GetAllProductsGivenRestaurantName(name);
+            List<Product> products = _restaurantRepository.GetAllProductsGivenRestaurantName(name);
             return Ok(products);
         }
 
@@ -56,20 +56,17 @@ namespace RestaurantServiceProvider.Controllers
         [HttpGet("name/{name}/products/price/{price}")]
         public ActionResult GetAllProductsGivenRestaurantNameAndPriceBelow(string name, int price)
         {
-            List<Product> products = _restaurants.GetAllProductsGivenRestaurantNameAndPriceBelow(name, price);
+            List<Product> products = _restaurantRepository.GetAllProductsGivenRestaurantNameAndPriceBelow(name, price);
             return Ok(products);
         }
-
-
-
 
         [HttpPost]
         public ActionResult AddRestaurant(RestaurantDTO restaurantDTO)
         {
             if (!ModelState.IsValid)
                 return BadRequest("bad request");
-            _restaurants.AddRestaurant(Restaurant.Create(restaurantDTO));
-            return Ok();
+            _restaurantRepository.AddRestaurant(Restaurant.Create(restaurantDTO));
+            return Created(nameof(Restaurant), "posted");
         }
     }
 }

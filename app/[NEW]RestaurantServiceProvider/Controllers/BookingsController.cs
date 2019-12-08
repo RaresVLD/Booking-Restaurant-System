@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using RestaurantServiceProvider.DTO;
 using RestaurantServiceProvider.Entities;
@@ -15,21 +12,21 @@ namespace RestaurantServiceProvider.Controllers
     [Route("v1/[controller]")]
     public class BookingsController : Controller
     {
-        public IBookingServiceRepository _bookings;
+        public IBookingServiceRepository _bookingRepository;
 
 
-        public BookingsController(IBookingServiceRepository bookings)
+        public BookingsController(IBookingServiceRepository bookingRepository)
         {
-            _bookings = bookings;
+            _bookingRepository = bookingRepository;
         }
 
         [HttpPost]
-        public ActionResult AddRestaurant(BookingDTO bookingDTO)
+        public ActionResult AddBooking(BookingDTO bookingDTO)
         {
             if (!ModelState.IsValid)
                 return BadRequest("bad request");
-            _bookings.AddBooking(Booking.Create(bookingDTO));
-            return Ok();
+            _bookingRepository.AddBooking(Booking.Create(bookingDTO));
+            return Created(nameof(Booking), "posted");
         }
 
         [HttpDelete("{id}")]
@@ -37,9 +34,9 @@ namespace RestaurantServiceProvider.Controllers
         {
             if (!ModelState.IsValid)
                 return BadRequest("bad request");
-           _bookings.DeleteBookingGivenId(id);
+           _bookingRepository.DeleteBookingGivenId(id);
         
-            return Ok();
+            return NoContent();
         }
     }
 }

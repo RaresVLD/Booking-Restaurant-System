@@ -1,10 +1,13 @@
 ﻿<Properties StartupConfiguration="{34C65E9E-EEB7-4B2D-B661-9469AA23B504}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DTO/BookingDTO.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
     <Files>
-      <File FileName="DbContext/RestaurantServiceProviderContext.cs" Line="1" Column="1" />
-      <File FileName="Entities/Product.cs" Line="1" Column="1" />
-      <File FileName="Controllers/BookingsController.cs" Line="27" Column="60" />
-      <File FileName="DTO/BookingDTO.cs" Line="19" Column="6" />
+      <File FileName="Controllers/RestaurantsController.cs" Line="35" Column="88" />
+      <File FileName="Entities/Booking.cs" Line="43" Column="45" />
+      <File FileName="Entities/Restaurant.cs" Line="1" Column="1" />
+      <File FileName="Controllers/BookingsController.cs" Line="1" Column="1" />
+      <File FileName="Entities/Product.cs" Line="20" Column="49" />
+      <File FileName="Controllers/ProductsController.cs" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="28" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,11 +15,9 @@
           <Node name="RestaurantServiceProvider" expanded="True">
             <Node name="RestaurantServiceProvider" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="DbContext" expanded="True" />
-              <Node name="DTO" expanded="True">
-                <Node name="BookingDTO.cs" selected="True" />
-              </Node>
               <Node name="Entities" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>

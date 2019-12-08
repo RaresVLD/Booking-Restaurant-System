@@ -51,19 +51,19 @@ namespace RestaurantServiceProvider.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("9a2bfecb-5332-479c-b5ca-4ec542a3498e"),
+                            Id = new Guid("ba32a528-0e5f-454d-98aa-588bb076099c"),
                             BookingDate = new DateTime(2019, 12, 10, 12, 12, 12, 0, DateTimeKind.Unspecified),
                             NumberOfPersons = 3,
-                            RestaurantId = new Guid("7f851c13-3f69-49e3-ba36-a008aac87a15"),
-                            UserId = new Guid("226d9502-9b5c-480f-92fe-cd6d69bc0489")
+                            RestaurantId = new Guid("84b88b63-64ad-4258-ac88-982ddf481033"),
+                            UserId = new Guid("8eb22ab1-2241-4f3e-8e44-963edf012d3b")
                         },
                         new
                         {
-                            Id = new Guid("34cad41c-19c2-4966-98e0-856e97f0b3f6"),
+                            Id = new Guid("8dd21049-aaad-46ba-a9cd-d7721c9d72b9"),
                             BookingDate = new DateTime(2019, 10, 10, 10, 10, 10, 0, DateTimeKind.Unspecified),
                             NumberOfPersons = 5,
-                            RestaurantId = new Guid("15f2d9d8-cd24-4956-8400-4d1e97bb3fc5"),
-                            UserId = new Guid("4db60556-b7ff-4833-b60d-7328a4a016d7")
+                            RestaurantId = new Guid("e20cfcce-f9a7-469e-a110-d027197a6fbd"),
+                            UserId = new Guid("1a456110-ced5-4cd3-8410-a96fbfa94059")
                         });
                 });
 
@@ -99,35 +99,35 @@ namespace RestaurantServiceProvider.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("ba756e15-0cdf-4d50-a755-155d52c27906"),
+                            Id = new Guid("7c33aefc-b842-4ffd-acea-620c198c48bb"),
                             Description = "Super gustoase aripioarele de la mama",
                             Name = "AripioareMamma",
                             Price = 20.5,
-                            RestaurantId = new Guid("7f851c13-3f69-49e3-ba36-a008aac87a15")
+                            RestaurantId = new Guid("84b88b63-64ad-4258-ac88-982ddf481033")
                         },
                         new
                         {
-                            Id = new Guid("b0805f08-bbf5-4eb8-9f65-82d9b27e72c4"),
+                            Id = new Guid("cde724e1-d6b3-496f-9db0-25aa25476004"),
                             Description = "Super buna piza de la mama",
                             Name = "PizzaMamma",
                             Price = 30.5,
-                            RestaurantId = new Guid("7f851c13-3f69-49e3-ba36-a008aac87a15")
+                            RestaurantId = new Guid("84b88b63-64ad-4258-ac88-982ddf481033")
                         },
                         new
                         {
-                            Id = new Guid("a4997451-d0db-4636-b320-08b68f5d468e"),
+                            Id = new Guid("b42e7f63-b2c1-407b-9234-1339e6f6b7d7"),
                             Description = "Cel mai bun bors din istoria tatarasi",
                             Name = "BorsSergio",
                             Price = 10.5,
-                            RestaurantId = new Guid("15f2d9d8-cd24-4956-8400-4d1e97bb3fc5")
+                            RestaurantId = new Guid("e20cfcce-f9a7-469e-a110-d027197a6fbd")
                         },
                         new
                         {
-                            Id = new Guid("8f164ff1-3854-4de7-bfda-2ab1c9d1fe58"),
+                            Id = new Guid("0a43f6d0-4be6-46c1-8af2-5d33595d46e3"),
                             Description = "Mamaliga goala facuta din malai si apa",
                             Name = "MamaligaSergio",
                             Price = 8.5,
-                            RestaurantId = new Guid("15f2d9d8-cd24-4956-8400-4d1e97bb3fc5")
+                            RestaurantId = new Guid("e20cfcce-f9a7-469e-a110-d027197a6fbd")
                         });
                 });
 
@@ -153,14 +153,14 @@ namespace RestaurantServiceProvider.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("7f851c13-3f69-49e3-ba36-a008aac87a15"),
+                            Id = new Guid("84b88b63-64ad-4258-ac88-982ddf481033"),
                             Address = "Centru",
                             Description = "E super central si chirica e patron",
                             Name = "Mamma mia"
                         },
                         new
                         {
-                            Id = new Guid("15f2d9d8-cd24-4956-8400-4d1e97bb3fc5"),
+                            Id = new Guid("e20cfcce-f9a7-469e-a110-d027197a6fbd"),
                             Address = "Tatarasi",
                             Description = "E super in tatarasi si patron sunt eu",
                             Name = "Serginio"
@@ -192,7 +192,7 @@ namespace RestaurantServiceProvider.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("226d9502-9b5c-480f-92fe-cd6d69bc0489"),
+                            Id = new Guid("8eb22ab1-2241-4f3e-8e44-963edf012d3b"),
                             Email = "tudormanoleasa@gmail.com",
                             FirstName = "Tudor",
                             LastName = "Manoleasa",
@@ -200,7 +200,7 @@ namespace RestaurantServiceProvider.Migrations
                         },
                         new
                         {
-                            Id = new Guid("4db60556-b7ff-4833-b60d-7328a4a016d7"),
+                            Id = new Guid("1a456110-ced5-4cd3-8410-a96fbfa94059"),
                             Email = "roxana.apopei@yahoo.com",
                             FirstName = "Roxana",
                             LastName = "Apopei",

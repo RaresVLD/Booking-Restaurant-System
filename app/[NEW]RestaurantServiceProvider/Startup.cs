@@ -23,9 +23,10 @@ namespace RestaurantServiceProvider
         public void ConfigureServices(IServiceCollection services)
         {
 
-            
+
             services.AddMvc(option => option.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Version_3_0).AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
             var connectionString = @"Server=(localdb)\mssqllocaldb;Database=Restaurant_DBNewFinal;Trusted_Connection=True;";
+            //var connectionString = "Server=localhost,1432; Database=Restaurant_DBNewFinal; User=SA; Password=reallyStrongPwd123";
             services.AddDbContext<RestaurantServiceProviderContext>(options => options.UseSqlServer(connectionString));
             services.AddTransient<IUserServiceRepository, UserServiceRepository>();
             services.AddTransient<IRestaurantServiceRepository, RestaurantServiceRepository>();

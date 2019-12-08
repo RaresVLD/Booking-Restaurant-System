@@ -11,37 +11,37 @@ namespace RestaurantServiceProvider.Controllers
     [Route("v1/[controller]")]
     public class UsersController : Controller
     {
-        public IUserServiceRepository _users;
+        public IUserServiceRepository _userRepository;
 
 
-        public UsersController(IUserServiceRepository user)
+        public UsersController(IUserServiceRepository userRepository)
         {
-            _users = user;
+            _userRepository = userRepository;
         }
 
 
         [HttpGet]
-        public ActionResult Get()
+        public IActionResult Get()
         {
-            List<User> users = _users.GetAllUsers();
+            List<User> users = _userRepository.GetAllUsers();
             return Ok(users);
         }
 
         [HttpGet("email/{email}/bookings")]
-        public ActionResult GetAllBookingsGivenEmail(string email)
+        public IActionResult GetAllBookingsGivenEmail(string email)
         {
-            List<Booking> bookings = _users.GetAllBookingsGivenEmail(email);
+            List<Booking> bookings = _userRepository.GetAllBookingsGivenEmail(email);
             return Ok(bookings);
         }
 
 
         [HttpPost]
-        public ActionResult AddUser(UserDTO userDTO)
+        public IActionResult AddUser(UserDTO userDTO)
         {
             if (!ModelState.IsValid)
                 return BadRequest("bad request");
-            _users.AddUser(Entities.User.Create(userDTO));
-            return Ok();
+            _userRepository.AddUser(Entities.User.Create(userDTO));
+            return Created(nameof(User), "posted");
         }
     }
 }

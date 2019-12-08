@@ -20,7 +20,7 @@
     "RestaurantServiceProvider": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "restaurants",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using RestaurantServiceProvider.Entities;
+using RestaurantServiceProvider.Service;
 using RestaurantServiceProvider.ServiceRepository;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -13,19 +14,19 @@ namespace RestaurantServiceProvider.Controllers
     public class ProductsController : Controller
     {
 
-        public IProductServiceRepository _productRepository;
+        public IProductService _productService;
 
 
-        public ProductsController(IProductServiceRepository productRepository)
+        public ProductsController(IProductService productService)
         {
-            _productRepository = productRepository;
+            _productService = productService;
         }
 
 
         [HttpGet]
         public ActionResult Get()
         {
-            List<Product> products = _productRepository.GetAllProducts();
+            List<Product> products = _productService.GetAllProducts();
             return Ok(products);
         }
 
@@ -33,7 +34,7 @@ namespace RestaurantServiceProvider.Controllers
         [HttpGet("booking/datetime/{datetime}")]
         public ActionResult GetAllProductsGivenBookingDateTime(DateTime dateTime)
         {
-            List<Product> products = _productRepository.GetAllProductsGivenBookingDateTime(dateTime);
+            List<Product> products = _productService.GetAllProductsGivenBookingDateTime(dateTime);
             return Ok(products);
         }
 
@@ -41,7 +42,7 @@ namespace RestaurantServiceProvider.Controllers
         [HttpGet("price/{price}")]
         public ActionResult GetAllProductsGivenPriceBelow(int price)
         {
-            List<Product> products = _productRepository.GetAllProductsGivenPriceBelow(price);
+            List<Product> products = _productService.GetAllProductsGivenPriceBelow(price);
             return Ok(products);
         }
 

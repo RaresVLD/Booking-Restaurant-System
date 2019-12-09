@@ -6737,24 +6737,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/aem/.nuget/packages/": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/aem/Git/[NEW]RestaurantServiceProvider/RestaurantServiceProvider.csproj",
+      "projectUniqueName": "D:\\Facultate\\Anul III\\.NET\\[NEW]RestaurantServiceProvider\\RestaurantServiceProvider.csproj",
       "projectName": "RestaurantServiceProvider",
-      "projectPath": "/Users/aem/Git/[NEW]RestaurantServiceProvider/RestaurantServiceProvider.csproj",
-      "packagesPath": "/Users/aem/.nuget/packages/",
-      "outputPath": "/Users/aem/Git/[NEW]RestaurantServiceProvider/obj/",
+      "projectPath": "D:\\Facultate\\Anul III\\.NET\\[NEW]RestaurantServiceProvider\\RestaurantServiceProvider.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\Facultate\\Anul III\\.NET\\[NEW]RestaurantServiceProvider\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/aem/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6826,7 +6828,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
+using RestaurantServiceProvider.Service;
 using RestaurantServiceProvider.ServiceRepository;
 
 namespace RestaurantServiceProvider
@@ -28,10 +29,19 @@ namespace RestaurantServiceProvider
             var connectionString = @"Server=(localdb)\mssqllocaldb;Database=Restaurant_DBNewFinal;Trusted_Connection=True;";
             //var connectionString = "Server=localhost,1432; Database=Restaurant_DBNewFinal; User=SA; Password=reallyStrongPwd123";
             services.AddDbContext<RestaurantServiceProviderContext>(options => options.UseSqlServer(connectionString));
-            services.AddTransient<IUserServiceRepository, UserServiceRepository>();
-            services.AddTransient<IRestaurantServiceRepository, RestaurantServiceRepository>();
-            services.AddTransient<IProductServiceRepository, ProductServiceRepository>();
-            services.AddTransient<IBookingServiceRepository, BookingServiceRepository>();
+           
+            services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IRestaurantRepository, RestaurantRepository>();
+            services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<IBookingRepository, BookingRepository>();
+
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IRestaurantService, RestaurantService>();
+            services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<IBookingService, BookingService>();
+
+
+
             services.AddControllers();
             services.AddCors();
         }

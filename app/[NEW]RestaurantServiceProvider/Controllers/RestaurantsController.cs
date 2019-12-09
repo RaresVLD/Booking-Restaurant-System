@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RestaurantServiceProvider.DTO;
 using RestaurantServiceProvider.Entities;
-using RestaurantServiceProvider.ServiceRepository;
+using RestaurantServiceProvider.Service;
 using System.Collections.Generic;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -12,19 +12,19 @@ namespace RestaurantServiceProvider.Controllers
     [Route("v1/[controller]")]
     public class RestaurantsController : Controller
     {
-        public IRestaurantServiceRepository _restaurantRepository;
+        public IRestaurantService _restaurantService;
 
 
-        public RestaurantsController(IRestaurantServiceRepository restaurantRepository)
+        public RestaurantsController(IRestaurantService restaurantService)
         {
-            _restaurantRepository = restaurantRepository;
+            _restaurantService = restaurantService;
         }
 
 
         [HttpGet]
         public ActionResult Get()
         {
-            List<Restaurant> restaurants = _restaurantRepository.GetAllRestaurants();
+            List<Restaurant> restaurants = _restaurantService.GetAllRestaurants();
             return Ok(restaurants);
         }
 
@@ -32,7 +32,7 @@ namespace RestaurantServiceProvider.Controllers
         [HttpGet("name/{name}")]
         public ActionResult GetRestaurantGivenName(string name)
         {
-            Restaurant restaurant = _restaurantRepository.GetRestaurantGivenName(name);
+            Restaurant restaurant = _restaurantService.GetRestaurantGivenName(name);
             return Ok(restaurant);
         }
 
@@ -40,7 +40,7 @@ namespace RestaurantServiceProvider.Controllers
         [HttpGet("address/{address}")]
         public ActionResult GetRestaurantGivenAddress(string address)
         {
-            Restaurant restaurant = _restaurantRepository.GetRestaurantGivenAddress(address);
+            Restaurant restaurant = _restaurantService.GetRestaurantGivenAddress(address);
             return Ok(restaurant);
         }
 
@@ -48,7 +48,7 @@ namespace RestaurantServiceProvider.Controllers
         [HttpGet("name/{name}/products")]
         public ActionResult GetAllProductsGivenRestaurantName(string name)
         {
-            List<Product> products = _restaurantRepository.GetAllProductsGivenRestaurantName(name);
+            List<Product> products = _restaurantService.GetAllProductsGivenRestaurantName(name);
             return Ok(products);
         }
 
@@ -56,7 +56,7 @@ namespace RestaurantServiceProvider.Controllers
         [HttpGet("name/{name}/products/price/{price}")]
         public ActionResult GetAllProductsGivenRestaurantNameAndPriceBelow(string name, int price)
         {
-            List<Product> products = _restaurantRepository.GetAllProductsGivenRestaurantNameAndPriceBelow(name, price);
+            List<Product> products = _restaurantService.GetAllProductsGivenRestaurantNameAndPriceBelow(name, price);
             return Ok(products);
         }
 
@@ -65,7 +65,7 @@ namespace RestaurantServiceProvider.Controllers
         {
             if (!ModelState.IsValid)
                 return BadRequest("bad request");
-            _restaurantRepository.AddRestaurant(Restaurant.Create(restaurantDTO));
+            _restaurantService.AddRestaurant(restaurantDTO);
             return Created(nameof(Restaurant), "posted");
         }
     }

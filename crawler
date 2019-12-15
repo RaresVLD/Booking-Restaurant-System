@@ -1,9 +1,6 @@
-using System.IO;
 using System.Collections.Generic;
-using System.Linq;
 using HtmlAgilityPack;
 using System;
-using Markdig.Helpers;
 
 public class Crawler
 
@@ -17,7 +14,12 @@ public class Crawler
             {
                 "https://www.takeaway.com/ro/friends-food-and-garden",
                 "https://www.takeaway.com/ro/moara-de-foc",
-                "https://glovoapp.com/en/ias/store/carbon-iasi/"
+                "https://glovoapp.com/en/ias/store/carbon-iasi/",
+                "https://glovoapp.com/en/ias/store/greek-taverna-souflaki-/",
+                "https://glovoapp.com/en/ias/store/restaurant-arnia-/",
+                "https://www.takeaway.com/ro/club-20-bamboo",
+                "https://www.takeaway.com/ro/pizzeria-goldoni",
+                "https://www.takeaway.com/ro/sushi-master-iasi",
 
             };
 
@@ -33,6 +35,8 @@ public class Crawler
             if (link.Contains(".takeaway.")) {
                 foreach (HtmlNode division in doc.DocumentNode.SelectNodes("//div[contains(@class, 'meal__description-texts js-meal-description-text')]"))
                 {
+
+                    Console.WriteLine(link.ToUpper());
                     /*Console.WriteLine(division.InnerText);*/
                     var trimmedText = division.InnerText.Trim();
 
@@ -42,16 +46,16 @@ public class Crawler
                     var descriere = array[1];
                     var pret = array[2];
 
-                    /*Console.WriteLine(name, "<--- NUMELE");
+                    Console.WriteLine(name, "<--- NUMELE");
                     Console.WriteLine(descriere, "<----- DESCRIERE");
-                    Console.WriteLine(pret, "<----- PRET");*/
+                    Console.WriteLine(pret, "<----- PRET");
                 }
 
             } else
             {
                 foreach (HtmlNode division in doc.DocumentNode.SelectNodes("//div[contains(@class, 'card-content')]"))
                 {
-                    /*Console.WriteLine(division.InnerText);*/
+                    Console.WriteLine(link.ToUpper());
                     var HtmlDom = division.InnerHtml;
                     HtmlDocument html = new HtmlDocument();
 
@@ -61,11 +65,25 @@ public class Crawler
                     HtmlNode b = html.DocumentNode.SelectSingleNode("//h4[contains(@class, 'title')]");
                     HtmlNode c = html.DocumentNode.SelectSingleNode("//div[contains(@class, 'price')]");
                     //Descriere
-                    Console.WriteLine(a.InnerText);
+                    if(a != null)
+                    {
+                        Console.WriteLine(a.InnerText);
+                    }
+
+                    if (b != null )
+                    {
+                        Console.WriteLine(b.InnerText);
+                    }
+
+                    if (c != null)
+                    {
+                        Console.WriteLine(c.InnerText);
+                    }
+
                     //Titlu
-                    Console.WriteLine(b.InnerText);
+                    /*Console.WriteLine(b.InnerText);
                     //Pret
-                    Console.WriteLine(c.InnerText);
+                    Console.WriteLine(c.InnerText);*/
                 }
 
             }

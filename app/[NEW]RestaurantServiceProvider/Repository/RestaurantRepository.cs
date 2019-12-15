@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RestaurantServiceProvider.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -31,6 +32,7 @@ namespace RestaurantServiceProvider.ServiceRepository
                                                                                                        .FirstOrDefault()
                                                                                                        .Products.Where(p => p.Price < price)
                                                                                                        .ToList();
+        public Guid GetRestaurantIdGivenRestaurantName(string name) => db.Restaurants.Where(r => r.Name == name).FirstOrDefault().Id;
 
         public void AddRestaurant(Restaurant r)
         {

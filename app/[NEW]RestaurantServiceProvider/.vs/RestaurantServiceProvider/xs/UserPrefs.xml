@@ -1,26 +1,34 @@
 ﻿<Properties StartupConfiguration="{34C65E9E-EEB7-4B2D-B661-9469AA23B504}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ProductsController.cs">
     <Files>
-      <File FileName="Controllers/RestaurantsController.cs" Line="35" Column="88" />
-      <File FileName="Entities/Booking.cs" Line="43" Column="45" />
-      <File FileName="Entities/Restaurant.cs" Line="1" Column="1" />
-      <File FileName="Controllers/BookingsController.cs" Line="1" Column="1" />
-      <File FileName="Entities/Product.cs" Line="20" Column="49" />
-      <File FileName="Controllers/ProductsController.cs" Line="1" Column="1" />
-      <File FileName="Startup.cs" Line="28" Column="1" />
+      <File FileName="Controllers/BookingsController.cs" Line="28" Column="50" />
+      <File FileName="Controllers/ProductsController.cs" Line="23" Column="15" />
+      <File FileName="Service/IProductService.cs" Line="13" Column="40" />
+      <File FileName="Service/ProductService.cs" Line="32" Column="44" />
+      <File FileName="Repository/ProductRepository.cs" Line="38" Column="14" />
+      <File FileName="Crawlers/PoductsCrawler.cs" Line="116" Column="90" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="41" Column="76" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RestaurantServiceProvider" expanded="True">
             <Node name="RestaurantServiceProvider" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ProductsController.cs" selected="True" />
+              </Node>
+              <Node name="Crawlers" expanded="True" />
+              <Node name="DbContext" expanded="True" />
               <Node name="Entities" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
+              <Node name="Repository" expanded="True" />
+              <Node name="Service" expanded="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

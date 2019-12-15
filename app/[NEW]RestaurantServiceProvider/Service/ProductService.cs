@@ -26,5 +26,10 @@ namespace RestaurantServiceProvider.Service
         {
             return _productRepository.GetAllProductsGivenPriceBelow(price);
         }
+
+        public void InsertProductsFromCrawler()
+        {
+            _productRepository.InsertProductsFromCrawler();
+        }
     }
 }

@@ -21,7 +21,8 @@ namespace RestaurantServiceProvider.Entities
         public string Address { get; private set; }
 
         public string Description { get; private set; }
-        
+
+
         public virtual ICollection<Product> Products { get; private set; }
 
         public static Restaurant Create(string name, string address, string description)

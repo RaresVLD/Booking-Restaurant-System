@@ -43,5 +43,6 @@ namespace RestaurantServiceProvider.Service
         {
             return _restaurantRepository.GetRestaurantGivenName(name);
         }
+
     }
 }

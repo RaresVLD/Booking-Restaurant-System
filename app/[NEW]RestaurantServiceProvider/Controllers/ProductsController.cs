@@ -20,6 +20,7 @@ namespace RestaurantServiceProvider.Controllers
         public ProductsController(IProductService productService)
         {
             _productService = productService;
+            //_productService.InsertProductsFromCrawler();
         }
 
 

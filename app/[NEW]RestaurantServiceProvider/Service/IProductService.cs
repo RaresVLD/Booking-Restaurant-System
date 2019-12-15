@@ -10,5 +10,6 @@ namespace RestaurantServiceProvider.Service
         public abstract List<Product> GetAllProducts();
         public abstract List<Product> GetAllProductsGivenBookingDateTime(DateTime dateTime);
         public abstract List<Product> GetAllProductsGivenPriceBelow(int price);
+        public abstract void InsertProductsFromCrawler();
     }
 }

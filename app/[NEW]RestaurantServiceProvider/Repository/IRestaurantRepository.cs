@@ -1,4 +1,5 @@
 ﻿using RestaurantServiceProvider.Entities;
+using System;
 using System.Collections.Generic;
 
 namespace RestaurantServiceProvider.ServiceRepository
@@ -16,5 +17,7 @@ namespace RestaurantServiceProvider.ServiceRepository
         public abstract List<Product> GetAllProductsGivenRestaurantNameAndPriceBelow(string name, int price);
 
         public abstract void AddRestaurant(Restaurant r);
+
+        public abstract Guid GetRestaurantIdGivenRestaurantName(string name);
     }
 }

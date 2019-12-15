@@ -1,0 +1,87 @@
+using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using HtmlAgilityPack;
+using System;
+using Markdig.Helpers;
+
+public class Crawler
+
+{
+
+    static void Main()
+
+    {
+
+        var Links = new List<string>
+            {
+                "https://www.takeaway.com/ro/friends-food-and-garden",
+                "https://www.takeaway.com/ro/moara-de-foc",
+                "https://glovoapp.com/en/ias/store/carbon-iasi/"
+
+            };
+
+
+        foreach (var link in Links)
+        {
+            var web = new HtmlWeb();
+            var doc = web.Load(link);
+            /*     foreach (HtmlNode div in doc.DocumentNode.SelectNodes("//span[contains(@class, 'meal-name')]"))
+                 {
+                     Console.WriteLine(div.InnerText);
+                 };*/
+            if (link.Contains(".takeaway.")) {
+                foreach (HtmlNode division in doc.DocumentNode.SelectNodes("//div[contains(@class, 'meal__description-texts js-meal-description-text')]"))
+                {
+                    /*Console.WriteLine(division.InnerText);*/
+                    var trimmedText = division.InnerText.Trim();
+
+                    string[] array = trimmedText.Split("\r\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+
+                    var name = array[0];
+                    var descriere = array[1];
+                    var pret = array[2];
+
+                    /*Console.WriteLine(name, "<--- NUMELE");
+                    Console.WriteLine(descriere, "<----- DESCRIERE");
+                    Console.WriteLine(pret, "<----- PRET");*/
+                }
+
+            } else
+            {
+                foreach (HtmlNode division in doc.DocumentNode.SelectNodes("//div[contains(@class, 'card-content')]"))
+                {
+                    /*Console.WriteLine(division.InnerText);*/
+                    var HtmlDom = division.InnerHtml;
+                    HtmlDocument html = new HtmlDocument();
+
+                    html.LoadHtml(HtmlDom);
+
+                    HtmlNode a = html.DocumentNode.SelectSingleNode("//div[contains(@class, 'description')]");
+                    HtmlNode b = html.DocumentNode.SelectSingleNode("//h4[contains(@class, 'title')]");
+                    HtmlNode c = html.DocumentNode.SelectSingleNode("//div[contains(@class, 'price')]");
+                    //Descriere
+                    Console.WriteLine(a.InnerText);
+                    //Titlu
+                    Console.WriteLine(b.InnerText);
+                    //Pret
+                    Console.WriteLine(c.InnerText);
+                }
+
+            }
+            
+
+            /*    foreach (HtmlNode division in doc.DocumentNode.SelectNodes("//div[contains(@class, 'meal__description-additional-info')]"))
+                {
+                    Console.WriteLine(division.InnerText);
+                }*/
+
+        }
+
+        /*        string text = node.InnerText;*/
+        /*Console.WriteLine(text);*/
+
+
+    }
+
+}

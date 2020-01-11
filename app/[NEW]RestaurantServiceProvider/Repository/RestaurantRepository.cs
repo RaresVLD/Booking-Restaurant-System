@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RestaurantServiceProvider.DTO;
 using RestaurantServiceProvider.Entities;
 using System;
 using System.Collections.Generic;
@@ -38,6 +39,17 @@ namespace RestaurantServiceProvider.ServiceRepository
         {
             db.Restaurants.Add(r);
             db.SaveChanges();
+        }
+
+        public List<RestaurantDTO> GetRestaurantsInfo()
+        {
+            var restaurants = db.Restaurants;
+            var restaurantsDTO = new List<RestaurantDTO>();
+            foreach(var restaurant in restaurants)
+            {
+                restaurantsDTO.Add(new RestaurantDTO(restaurant.Name, restaurant.Address, restaurant.Description));
+            }
+            return restaurantsDTO;
         }
     }
 }

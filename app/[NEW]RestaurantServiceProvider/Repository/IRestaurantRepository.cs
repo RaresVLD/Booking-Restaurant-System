@@ -1,4 +1,5 @@
-﻿using RestaurantServiceProvider.Entities;
+﻿using RestaurantServiceProvider.DTO;
+using RestaurantServiceProvider.Entities;
 using System;
 using System.Collections.Generic;
 
@@ -19,5 +20,7 @@ namespace RestaurantServiceProvider.ServiceRepository
         public abstract void AddRestaurant(Restaurant r);
 
         public abstract Guid GetRestaurantIdGivenRestaurantName(string name);
+
+        public abstract List<RestaurantDTO> GetRestaurantsInfo();
     }
 }

@@ -3,11 +3,11 @@ using System;
 
 namespace RestaurantServiceProvider.ServiceRepository
 {
-    public class BookingRepository : IBookingRepository
+    public class BookingServiceRepository : IBookingServiceRepository
     {
         private RestaurantServiceProviderContext db;
 
-        public BookingRepository(RestaurantServiceProviderContext context)
+        public BookingServiceRepository(RestaurantServiceProviderContext context)
         {
             db = context;
         }

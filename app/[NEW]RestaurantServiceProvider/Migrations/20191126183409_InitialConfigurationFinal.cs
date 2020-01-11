@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace RestaurantServiceProvider.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class InitialConfigurationFinal : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -91,17 +91,8 @@ namespace RestaurantServiceProvider.Migrations
                 columns: new[] { "Id", "Address", "Description", "Name" },
                 values: new object[,]
                 {
-                    { new Guid("903a213a-7f14-4075-9ea4-d6fecd2b6c37"), "Bld. Tudor Vladimirescu, et.2", "Clatite americane reinventate, arome delicioase", "Panck's" },
-                    { new Guid("e6f8a0ca-1c18-49ba-8965-899dde583528"), "Bld. Carol I nr.4 ", "Va asteptam intr-o ambianţă originală, cu puternice accente tradiţionale moldoveneşti si cu un meniu foarte atractiv.", "La Placinte" },
-                    { new Guid("35c21d36-8a1a-4cf5-82c6-ee807c632374"), "Strada Silvestru nr. 4, Iași 700259", "Culoarea are gust.", "Oliv" },
-                    { new Guid("6d6cb2e2-e68c-46ef-b598-502ecce8beca"), "3F, Strada Palas, Iași 700032", "Sophisticated and tempting restaurant. Located in the historic core of the city, near the Palace of Culture in the Palas ensemble which is \"city in the heart of the city\".Elegant interior and luxurious atmosphere.", "Fenice" },
-                    { new Guid("4da203dd-e6b6-43bf-9597-55a99faeadba"), "Palas Food Court, Strada Palas 5C, Iași 700259", "Puterea gustului!", "Mado Palas" },
-                    { new Guid("d16a59d6-b738-46c5-81f7-b62804d8fc38"), "Esplanada Teatrul Luceafărul, Iași 700259", "The Trumpets este locul în care, lăsănd grijile la o parte, se amplifică simțurile și deschiderea către distracție. Auzul, gustul, simțul olfactiv și cel tactil, sunt celebrate în cadrul pub-ului pentru a-ți reda buna dispoziție după ce ai petrecut o zi cu ochii în calculator, rapoarte sau facturi. Fiindcă cercetătorii britanici au descoperit că partea plină a paharului se vede cel mai bine atunci când iți aduce chelnerul următorul rând.", "The Trumpets" },
-                    { new Guid("8bb5e343-4c5e-46ec-9b7a-0d1a8c56f33d"), "Strada Palat 3F, Iași 700032", "Grilling to perfection is not a goal it's a MUST!", "Chef Galerie" },
-                    { new Guid("100f3c09-41ff-4a7c-971d-94efcf67c8df"), "Strada Grigore Ureche nr. 27, Iași 700044", "Legend este locul unde berea e mai rece decât ți-ai putea imagina, mâncarea este mai bună decât atunci când nu mai poți de foame, iar petrecerile sunt mai nebune decât orice-ai văzut înainte. De ce? Fiindcă trăim totul la superlativ. Despre asta este #Legend", "Legend Pub" },
-                    { new Guid("20ba02d8-8115-43ae-85d6-6553b0e270ff"), "Shopping Street, Iași 700051", "Pentru că prietenii merg mână în mână cu un cocktail bun, cafeaua italiană merge perfect cu diminețile pline de soare și weekendurile nu sunt la fel fără o masă cu savori italiene alese, alături de familie, s-a creat C-House!", "C House Lounge" },
-                    { new Guid("11831525-8ed3-4f5b-8029-22cb04ef2f7a"), "Strada Palas", "Construit dintr-o idee grozavă și nu liniștită, Treaz & Nu este primul local conceptual din oraș menit să-i gâdile pe iubitorii de vinuri și pasionații de cafea.Credem că pe lume există prea puțină cafea de specialitate și vinuri de calitate, pentru câte lucruri avem să ne spunem. Așa că hai să le-ncercăm pe toate!", "Treaz & Nu" },
-                    { new Guid("a783b5ac-5cdf-4db6-b706-af7b4401187d"), "Strada Palas nr. 7A, Iași 700051", "Carbon a fost creat pentru a redefini experienta gastronomica.", "Carbon" }
+                    { new Guid("84b88b63-64ad-4258-ac88-982ddf481033"), "Centru", "E super central si chirica e patron", "Mamma mia" },
+                    { new Guid("e20cfcce-f9a7-469e-a110-d027197a6fbd"), "Tatarasi", "E super in tatarasi si patron sunt eu", "Serginio" }
                 });
 
             migrationBuilder.InsertData(
@@ -109,8 +100,28 @@ namespace RestaurantServiceProvider.Migrations
                 columns: new[] { "Id", "Email", "FirstName", "LastName", "Password" },
                 values: new object[,]
                 {
-                    { new Guid("93bd6f45-e890-4453-8856-1e9033855137"), "tudormanoleasa@gmail.com", "Tudor", "Manoleasa", "parolatudormanoleasa" },
-                    { new Guid("a25e2a4e-895c-4072-889a-58c313fd49e3"), "roxana.apopei@yahoo.com", "Roxana", "Apopei", "parolaroxanaapopei" }
+                    { new Guid("8eb22ab1-2241-4f3e-8e44-963edf012d3b"), "tudormanoleasa@gmail.com", "Tudor", "Manoleasa", "parolatudormanoleasa" },
+                    { new Guid("1a456110-ced5-4cd3-8410-a96fbfa94059"), "roxana.apopei@yahoo.com", "Roxana", "Apopei", "parolaroxanaapopei" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Bookings",
+                columns: new[] { "Id", "BookingDate", "NumberOfPersons", "ProductId", "RestaurantId", "UserId" },
+                values: new object[,]
+                {
+                    { new Guid("ba32a528-0e5f-454d-98aa-588bb076099c"), new DateTime(2019, 12, 10, 12, 12, 12, 0, DateTimeKind.Unspecified), 3, null, new Guid("84b88b63-64ad-4258-ac88-982ddf481033"), new Guid("8eb22ab1-2241-4f3e-8e44-963edf012d3b") },
+                    { new Guid("8dd21049-aaad-46ba-a9cd-d7721c9d72b9"), new DateTime(2019, 10, 10, 10, 10, 10, 0, DateTimeKind.Unspecified), 5, null, new Guid("e20cfcce-f9a7-469e-a110-d027197a6fbd"), new Guid("1a456110-ced5-4cd3-8410-a96fbfa94059") }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Products",
+                columns: new[] { "Id", "BookingId", "Description", "Name", "Price", "RestaurantId" },
+                values: new object[,]
+                {
+                    { new Guid("7c33aefc-b842-4ffd-acea-620c198c48bb"), null, "Super gustoase aripioarele de la mama", "AripioareMamma", 20.5, new Guid("84b88b63-64ad-4258-ac88-982ddf481033") },
+                    { new Guid("cde724e1-d6b3-496f-9db0-25aa25476004"), null, "Super buna piza de la mama", "PizzaMamma", 30.5, new Guid("84b88b63-64ad-4258-ac88-982ddf481033") },
+                    { new Guid("b42e7f63-b2c1-407b-9234-1339e6f6b7d7"), null, "Cel mai bun bors din istoria tatarasi", "BorsSergio", 10.5, new Guid("e20cfcce-f9a7-469e-a110-d027197a6fbd") },
+                    { new Guid("0a43f6d0-4be6-46c1-8af2-5d33595d46e3"), null, "Mamaliga goala facuta din malai si apa", "MamaligaSergio", 8.5, new Guid("e20cfcce-f9a7-469e-a110-d027197a6fbd") }
                 });
 
             migrationBuilder.CreateIndex(

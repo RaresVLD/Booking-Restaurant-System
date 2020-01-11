@@ -2,8 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using RestaurantServiceProvider.DTO;
 using RestaurantServiceProvider.Entities;
-using RestaurantServiceProvider.Service;
-
+using RestaurantServiceProvider.ServiceRepository;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,29 +12,29 @@ namespace RestaurantServiceProvider.Controllers
     [Route("v1/[controller]")]
     public class BookingsController : Controller
     {
-        public IBookingService _bookingService;
+        public IBookingServiceRepository _bookingRepository;
 
 
-        public BookingsController(IBookingService bookingService)
+        public BookingsController(IBookingServiceRepository bookingRepository)
         {
-            _bookingService = bookingService;
+            _bookingRepository = bookingRepository;
         }
 
         [HttpPost]
         public ActionResult AddBooking(BookingDTO bookingDTO)
         {
             if (!ModelState.IsValid)
-                return BadRequest("Bad request");
-            _bookingService.AddBooking(bookingDTO);
-            return Created(nameof(Booking), "Posted");
+                return BadRequest("bad request");
+            _bookingRepository.AddBooking(Booking.Create(bookingDTO));
+            return Created(nameof(Booking), "posted");
         }
 
         [HttpDelete("{id}")]
         public ActionResult DeleteBookingGivenId(Guid id)
         {
             if (!ModelState.IsValid)
-                return BadRequest("Bad Request");
-           _bookingService.DeleteBookingGivenId(id);
+                return BadRequest("bad request");
+           _bookingRepository.DeleteBookingGivenId(id);
         
             return NoContent();
         }

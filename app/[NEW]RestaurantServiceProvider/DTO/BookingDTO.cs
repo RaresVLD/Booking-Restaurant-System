@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using RestaurantServiceProvider.Entities;
 
 namespace RestaurantServiceProvider.DTO
 {
@@ -18,8 +16,5 @@ namespace RestaurantServiceProvider.DTO
         public Guid UserId { get; set; }
 
         public Guid RestaurantId { get; set; }
-
-        public List<Product> Products { get; private set; }
-
     }
 }

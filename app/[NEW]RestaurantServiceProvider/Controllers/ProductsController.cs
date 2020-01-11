@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using RestaurantServiceProvider.Entities;
-using RestaurantServiceProvider.Service;
+using RestaurantServiceProvider.ServiceRepository;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,20 +13,19 @@ namespace RestaurantServiceProvider.Controllers
     public class ProductsController : Controller
     {
 
-        public IProductService _productService;
+        public IProductServiceRepository _productRepository;
 
 
-        public ProductsController(IProductService productService)
+        public ProductsController(IProductServiceRepository productRepository)
         {
-            _productService = productService;
-            //_productService.InsertProductsFromCrawler();
+            _productRepository = productRepository;
         }
 
 
         [HttpGet]
         public ActionResult Get()
         {
-            List<Product> products = _productService.GetAllProducts();
+            List<Product> products = _productRepository.GetAllProducts();
             return Ok(products);
         }
 
@@ -34,7 +33,7 @@ namespace RestaurantServiceProvider.Controllers
         [HttpGet("booking/datetime/{datetime}")]
         public ActionResult GetAllProductsGivenBookingDateTime(DateTime dateTime)
         {
-            List<Product> products = _productService.GetAllProductsGivenBookingDateTime(dateTime);
+            List<Product> products = _productRepository.GetAllProductsGivenBookingDateTime(dateTime);
             return Ok(products);
         }
 
@@ -42,7 +41,7 @@ namespace RestaurantServiceProvider.Controllers
         [HttpGet("price/{price}")]
         public ActionResult GetAllProductsGivenPriceBelow(int price)
         {
-            List<Product> products = _productService.GetAllProductsGivenPriceBelow(price);
+            List<Product> products = _productRepository.GetAllProductsGivenPriceBelow(price);
             return Ok(products);
         }
 

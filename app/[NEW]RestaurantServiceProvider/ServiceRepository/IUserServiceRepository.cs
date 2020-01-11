@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace RestaurantServiceProvider.ServiceRepository
 {
-    public interface IUserRepository
+    public interface IUserServiceRepository
     {
         public abstract void AddUser(User user);
 
@@ -12,4 +12,3 @@ namespace RestaurantServiceProvider.ServiceRepository
         public abstract List<Booking> GetAllBookingsGivenEmail(string email);
     }
 }
-

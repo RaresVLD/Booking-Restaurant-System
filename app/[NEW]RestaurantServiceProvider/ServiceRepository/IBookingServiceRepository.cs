@@ -3,7 +3,7 @@ using System;
 
 namespace RestaurantServiceProvider.ServiceRepository
 {
-    public interface IBookingRepository
+    public interface IBookingServiceRepository
     {
         public abstract void AddBooking(Booking booking);
 

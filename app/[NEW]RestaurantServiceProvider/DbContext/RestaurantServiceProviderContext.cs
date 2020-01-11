@@ -24,8 +24,8 @@ namespace RestaurantServiceProvider
         {
             User[] users = UserSeed.CreateUsers();
             Restaurant[] restaurants = RestaurantSeed.CreateRestaurants();
-            //Product[] products = ProductSeed.CreateProducts(restaurants);
-            //Booking[] bookings = BookingSeed.CreateBookings(users, restaurants, products);
+            Product[] products = ProductSeed.CreateProducts(restaurants);
+            Booking[] bookings = BookingSeed.CreateBookings(users, restaurants, products);
 
             modelBuilder.Entity<Restaurant>().HasMany(r => r.Products).WithOne(p => p.Restaurant);
             modelBuilder.Entity<Product>().HasOne(p => p.Restaurant).WithMany(r => r.Products);
@@ -38,8 +38,8 @@ namespace RestaurantServiceProvider
 
             modelBuilder.Entity<User>().HasData(users);
             modelBuilder.Entity<Restaurant>().HasData(restaurants);
-            //modelBuilder.Entity<Product>().HasData(products);
-            //modelBuilder.Entity<Booking>().HasData(bookings);
+            modelBuilder.Entity<Product>().HasData(products);
+            modelBuilder.Entity<Booking>().HasData(bookings);
        
         }
 

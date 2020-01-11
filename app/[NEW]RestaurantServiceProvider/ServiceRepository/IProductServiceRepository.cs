@@ -2,14 +2,16 @@
 using System;
 using System.Collections.Generic;
 
-
-namespace RestaurantServiceProvider.Service
+namespace RestaurantServiceProvider.ServiceRepository
 {
-    public interface IProductService
+    public interface IProductServiceRepository
     {
         public abstract List<Product> GetAllProducts();
+
+
         public abstract List<Product> GetAllProductsGivenBookingDateTime(DateTime dateTime);
+
         public abstract List<Product> GetAllProductsGivenPriceBelow(int price);
-        public abstract void InsertProductsFromCrawler();
+
     }
 }

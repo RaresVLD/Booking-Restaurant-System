@@ -1,17 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RestaurantServiceProvider.DTO;
 using RestaurantServiceProvider.Entities;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace RestaurantServiceProvider.ServiceRepository
 {
-    public class RestaurantRepository : IRestaurantRepository
+    public class RestaurantServiceRepository : IRestaurantServiceRepository
     {
         private RestaurantServiceProviderContext db;
 
-        public RestaurantRepository(RestaurantServiceProviderContext context)
+        public RestaurantServiceRepository(RestaurantServiceProviderContext context)
         {
             db = context;
         }
@@ -29,27 +27,12 @@ namespace RestaurantServiceProvider.ServiceRepository
         }
 
         public List<Product> GetAllProductsGivenRestaurantNameAndPriceBelow(string name, int price) => db.Restaurants.Include(r => r.Products)
-                                                                                                       .Where(r => r.Name == name)
-                                                                                                       .FirstOrDefault()
-                                                                                                       .Products.Where(p => p.Price < price)
-                                                                                                       .ToList();
-        public Guid GetRestaurantIdGivenRestaurantName(string name) => db.Restaurants.Where(r => r.Name == name).FirstOrDefault().Id;
+                                                                                                       .Where(r => r.Name == name).FirstOrDefault().Products.Where(p => p.Price < price).ToList();
 
         public void AddRestaurant(Restaurant r)
         {
             db.Restaurants.Add(r);
             db.SaveChanges();
-        }
-
-        public List<RestaurantDTO> GetRestaurantsInfo()
-        {
-            var restaurants = db.Restaurants;
-            var restaurantsDTO = new List<RestaurantDTO>();
-            foreach(var restaurant in restaurants)
-            {
-                restaurantsDTO.Add(new RestaurantDTO(restaurant.Name, restaurant.Address, restaurant.Description));
-            }
-            return restaurantsDTO;
         }
     }
 }

@@ -1,16 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RestaurantServiceProvider.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace RestaurantServiceProvider.ServiceRepository
 {
-    public class UserRepository : IUserRepository
+    public class UserServiceRepository : IUserServiceRepository
     {
         private RestaurantServiceProviderContext db;
 
 
-        public UserRepository(RestaurantServiceProviderContext context)
+        public UserServiceRepository(RestaurantServiceProviderContext context)
         {
             db = context;
         }
@@ -23,8 +25,7 @@ namespace RestaurantServiceProvider.ServiceRepository
         }
 
         public List<Booking> GetAllBookingsGivenEmail(string email) => db.Users.Include(u => u.Bookings)
-                                                                          .Where(u => u.Email == email)
-                                                                          .FirstOrDefault().Bookings.ToList();
+                                                                          .Where(u => u.Email == email).FirstOrDefault().Bookings.ToList();
 
         public List<User> GetAllUsers() => db.Users.ToList();
     }

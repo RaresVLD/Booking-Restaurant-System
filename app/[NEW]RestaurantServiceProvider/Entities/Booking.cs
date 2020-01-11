@@ -32,7 +32,7 @@ namespace RestaurantServiceProvider.Entities
         public virtual ICollection<Product> Products { get; private set; }
 
 
-        public static Booking Create(int numberOfPersons, DateTime bookingDate, Guid userId, Guid restaurantId)
+        public static Booking Create(int numberOfPersons, DateTime bookingDate, Guid userId, Guid restaurantId, List<Product> products)
         {
             return new Booking
             {
@@ -41,12 +41,13 @@ namespace RestaurantServiceProvider.Entities
                 BookingDate = bookingDate,
                 UserId = userId,
                 RestaurantId = restaurantId,
+                Products = products
             };
         }
 
         public static Booking Create(BookingDTO bookingDTO)
         {
-            return Booking.Create(bookingDTO.NumberOfPersons, bookingDTO.BookingDate, bookingDTO.UserId, bookingDTO.RestaurantId);
+            return Booking.Create(bookingDTO.NumberOfPersons, bookingDTO.BookingDate, bookingDTO.UserId, bookingDTO.RestaurantId, bookingDTO.Products);
         }
     }
 }

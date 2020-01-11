@@ -1,5 +1,4 @@
-﻿using System;
-namespace RestaurantServiceProvider.Crawlers
+﻿namespace RestaurantServiceProvider.Crawlers
 {
     public class ProductCrawlerDTO
     {

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using HtmlAgilityPack;
 using RestaurantServiceProvider.Entities;
-using System.Text.RegularExpressions;
 using RestaurantServiceProvider.ServiceRepository;
 
 namespace RestaurantServiceProvider.Crawlers

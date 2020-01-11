@@ -13,5 +13,6 @@ namespace RestaurantServiceProvider.Service
         public List<Product> GetAllProductsGivenRestaurantName(string name);
         public List<Product> GetAllProductsGivenRestaurantNameAndPriceBelow(string name, int price);
         public void AddRestaurant(RestaurantDTO r);
+        public List<RestaurantDTO> GetRestaurantsInfo();
     }
 }

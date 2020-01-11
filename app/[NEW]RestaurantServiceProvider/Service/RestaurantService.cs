@@ -44,5 +44,9 @@ namespace RestaurantServiceProvider.Service
             return _restaurantRepository.GetRestaurantGivenName(name);
         }
 
+        public List<RestaurantDTO> GetRestaurantsInfo()
+        {
+            return _restaurantRepository.GetRestaurantsInfo();
+        }
     }
 }

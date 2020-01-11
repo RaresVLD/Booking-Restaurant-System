@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RestaurantServiceProvider.DTO;
 using RestaurantServiceProvider.Entities;
+using RestaurantServiceProvider.Service;
 using RestaurantServiceProvider.ServiceRepository;
 using System.Collections.Generic;
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -11,26 +12,24 @@ namespace RestaurantServiceProvider.Controllers
     [Route("v1/[controller]")]
     public class UsersController : Controller
     {
-        public IUserServiceRepository _userRepository;
-
-
-        public UsersController(IUserServiceRepository userRepository)
+        public IUserService _userService;
+        public UsersController(IUserService userService)
         {
-            _userRepository = userRepository;
+            _userService = userService;
         }
 
 
         [HttpGet]
         public IActionResult Get()
         {
-            List<User> users = _userRepository.GetAllUsers();
+            List<User> users = _userService.GetAllUsers();
             return Ok(users);
         }
 
         [HttpGet("email/{email}/bookings")]
         public IActionResult GetAllBookingsGivenEmail(string email)
         {
-            List<Booking> bookings = _userRepository.GetAllBookingsGivenEmail(email);
+            List<Booking> bookings = _userService.GetAllBookingsGivenEmail(email);
             return Ok(bookings);
         }
 
@@ -39,9 +38,9 @@ namespace RestaurantServiceProvider.Controllers
         public IActionResult AddUser(UserDTO userDTO)
         {
             if (!ModelState.IsValid)
-                return BadRequest("bad request");
-            _userRepository.AddUser(Entities.User.Create(userDTO));
-            return Created(nameof(User), "posted");
+                return BadRequest("Bad Request");
+            _userService.AddUser(userDTO);
+            return Created(nameof(User), "Posted");
         }
     }
 }

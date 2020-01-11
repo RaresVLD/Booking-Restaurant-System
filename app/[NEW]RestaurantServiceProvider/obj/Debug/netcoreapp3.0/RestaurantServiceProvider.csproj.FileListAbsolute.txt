@@ -114,3 +114,123 @@ C:/Users/Tudor/source/repos/RestaurantServiceProvider/obj/Debug/netcoreapp3.0/Re
 /Users/aem/Git/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/aem/Git/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.RazorTargetAssemblyInfo.cache
 /Users/aem/Git/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.csproj.CopyComplete
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/appsettings.Development.json
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/appsettings.json
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Properties/launchSettings.json
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/RestaurantServiceProvider.exe
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/RestaurantServiceProvider.deps.json
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/RestaurantServiceProvider.runtimeconfig.json
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/RestaurantServiceProvider.runtimeconfig.dev.json
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/RestaurantServiceProvider.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/RestaurantServiceProvider.pdb
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/FSharp.Core.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.JsonPatch.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Data.SqlClient.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Relational.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Caching.Abstractions.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Caching.Memory.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Configuration.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Configuration.Abstractions.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Configuration.Binder.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Configuration.FileExtensions.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Configuration.Json.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.FileProviders.Abstractions.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.FileProviders.Physical.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.FileSystemGlobbing.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Logging.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Logging.Abstractions.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Options.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Primitives.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Identity.Client.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Newtonsoft.Json.Bson.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Status.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/System.Configuration.ConfigurationManager.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/System.Runtime.Caching.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/System.Security.Cryptography.ProtectedData.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/win-arm64/native/sni.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/win-x64/native/sni.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/win-x86/native/sni.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.csprojAssemblyReference.cache
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/staticwebassets/RestaurantServiceProvider.StaticWebAssets.Manifest.cache
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/staticwebassets/RestaurantServiceProvider.StaticWebAssets.xml
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.MvcApplicationPartsAssemblyInfo.cache
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.AssemblyInfoInputs.cache
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.AssemblyInfo.cs
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.RazorTargetAssemblyInfo.cache
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.csproj.CopyComplete
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.dll
+D:/Facultate/Anul III/.NET/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.pdb
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.csprojAssemblyReference.cache
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/staticwebassets/RestaurantServiceProvider.StaticWebAssets.Manifest.cache
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/staticwebassets/RestaurantServiceProvider.StaticWebAssets.xml
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.MvcApplicationPartsAssemblyInfo.cache
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.AssemblyInfoInputs.cache
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.AssemblyInfo.cs
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.pdb
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/appsettings.Development.json
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/appsettings.json
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Properties/launchSettings.json
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/RestaurantServiceProvider
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/RestaurantServiceProvider.deps.json
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/RestaurantServiceProvider.runtimeconfig.json
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/RestaurantServiceProvider.runtimeconfig.dev.json
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/RestaurantServiceProvider.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/RestaurantServiceProvider.pdb
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/FSharp.Core.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/HtmlAgilityPack.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Data.SqlClient.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Configuration.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Configuration.Binder.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Configuration.FileExtensions.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Configuration.Json.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.FileProviders.Abstractions.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.FileProviders.Physical.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.FileSystemGlobbing.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Logging.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Options.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Primitives.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Microsoft.Identity.Client.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Newtonsoft.Json.Bson.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/Status.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/System.Configuration.ConfigurationManager.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/System.Runtime.Caching.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/System.Security.Cryptography.ProtectedData.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/System.Xml.XPath.XmlDocument.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/win-arm64/native/sni.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/win-x64/native/sni.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/win-x86/native/sni.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/bin/Debug/netcoreapp3.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.RazorTargetAssemblyInfo.cache
+/Users/aem/Git/Booking-Restaurant-System/app/[NEW]RestaurantServiceProvider/obj/Debug/netcoreapp3.0/RestaurantServiceProvider.csproj.CopyComplete

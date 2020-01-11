@@ -20,20 +20,27 @@ namespace RestaurantServiceProvider.Controllers
             _restaurantService = restaurantService;
         }
 
-
+        /*
         [HttpGet]
         public ActionResult Get()
         {
             List<Restaurant> restaurants = _restaurantService.GetAllRestaurants();
             return Ok(restaurants);
-        }
+        }*/
 
-
+        
         [HttpGet("name/{name}")]
         public ActionResult GetRestaurantGivenName(string name)
         {
             Restaurant restaurant = _restaurantService.GetRestaurantGivenName(name);
             return Ok(restaurant);
+        }
+
+        [HttpGet]
+        public ActionResult GetRestaurantsInfo()
+        {
+            List<RestaurantDTO> restaurants = _restaurantService.GetRestaurantsInfo();
+            return Ok(restaurants);
         }
 
 
